@@ -1,0 +1,35 @@
+Types of Recommeder
+
+Content based :- recommend thing on the basis similarity of  content (tag based)
+
+Collaborator :-  user k intrest k basis pr recommend krta hai
+
+Hybrid :-Combination of above
+
+
+
+
+
+
+create a daatframe where we have 3 columns 
+movie id title and tags
+to create tag merge all columns except movie id and title
+
+
+core idea 
+text vectorisation
+    tech bag of words
+    https://www.einfochips.com/blog/nlp-text-vectorization/
+
+    with this we each movies are turned to be vector and we choose closet vector as recommended movies for user
+
+    Stemming
+    [love loved loving]  changes to
+    [love love love]
+    libaray used 
+    nltk
+
+    we did'nt choose euclidian distance to measure the dist b/n two vector as it failed for higher dimension
+    space (in our case 5000) so we choose cosine distance method
+
+
